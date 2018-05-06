@@ -1,0 +1,25 @@
+body{
+	font-family: lato;
+	text-align: center;
+	font-size: 1rem;
+	color:darkslategrey;
+	margin:0.5rem auto;
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  padding:1rem;
+  border:1px solid lightgrey;
+  margin:0.2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.basket{
+  cursor: default;
+  color:brown;
+}
