@@ -4,45 +4,36 @@ class Spain extends React.Component {
 
 	constructor( props ) {
 		super( props );
-		this.state = { spain : [] };
+		this.state = { people : [] };
 
-		this.path = `./spain.json`;
+		this.path = `https://randomuser.me/api/?results=10`;
 	}
 
-	async componentDidMount() {
+  componentDidMount() {
 
-     await fetch( this.path , {
-        headers : { 
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
+     fetch( this.path )
+
+			.then( response =>response.json())
+			.then( data => {
+        let people = data.results;
+				this.setState( { people } )
         }
-
-      })
-
-			.then( response =>
-				// Returns a promise that resolves with a JSON object.
-				response.json()
-			)
-			.then( spain =>
-				this.setState( { spain } )
 			)
 	}
 
 	render() {
-		return ( <List spain={this.state.spain} /> )
+    //return ( <p></p> )
+		return ( <List people={this.state.people} /> )
 	}
 
 }
 
-const List = ({ spain }) => (
+const List = ({ people }) => (
 	<section className="flex">
-		{ spain.map((city,n) =>
+		{ people.map((person,n) =>
 			<section className="panel" key={n}>
-				<img src={ "media/"+ city.image }/>
-				<p>{ city.name }</p>
-				<p>{ city.region }</p>
-				<p>{ city.popl }</p>
-				<p>{ city.temp }</p>
+				<p>{ person.email }</p>
+				<p>{ person.gender }</p>
 			</section>
 		)}
 	</section>

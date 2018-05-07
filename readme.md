@@ -2,4 +2,5 @@
 
 ## To Do
 
-- Read JSON in React from StackBlitz
+- Read JSON in React from StackBlitz?
+- Starter versions of StackBlitz code
