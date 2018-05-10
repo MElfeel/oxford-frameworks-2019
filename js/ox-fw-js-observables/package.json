@@ -1,0 +1,9 @@
+{
+  "name": "ox-fw-js-observables",
+  "description": "",
+  "homepage": "https://stackblitz.com/edit/ox-fw-js-observables",
+  "dependencies": {
+    "rx": "4.1.0"
+  },
+  "version": "1.0.0"
+}
