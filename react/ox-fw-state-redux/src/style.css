@@ -1,0 +1,10 @@
+body{
+	font-family: lato,sans-serif;
+	color:darkslategrey;
+	text-align: center;
+	font-size: 4rem;
+}
+
+button{
+	padding:1rem;
+}
