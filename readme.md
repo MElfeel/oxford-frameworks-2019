@@ -2,6 +2,7 @@
 
 ## To Do
 
+- Create diagram of JS ecosystem/road-map
 - Read JSON in React from StackBlitz?
 - Starter versions of StackBlitz code
 - Bugs in React Router 
