@@ -9,34 +9,34 @@
 		{ h : "Today" , t : "Todays course will use <span>hands-on exercises</span> to introduce the Javascript frameworks Angular and React." },
 		{ h : "Why bother?" , t : "Plain Javascript works for <span>small, new, simple, one-person projects</span> developed by an experienced Javascript developer with an understanding of scope and how to structure code." },
 		{ h : "Complexity" , i : "media/Högertrafikomläggningen.jpg" },
-		{ h : "Complexity" , t : "Projects become more complex over time. <span>'Without components our applications become monolithic spaghetti monsters.'</span> Derek Bailey" },
+		{ h : "Complexity" , t : "Derek Bailey: <span>'Without components our applications become monolithic spaghetti monsters.'</span> Projects become more complex and tangled over time." },
 		{ i : "media/jquery.png" , t : "<span>jQuery spaghetti</span>: brittle code that is tightly coupled to the DOM. <span>$('#city').addClass('.oxford')</span>" },
 		{ h : "Secret" , t : "<span>The secret to building large things?</span> Make small things and compose/combine them together intelligently."},
-		{ h : "Teams" , t : "We need ways to write code in teams. Collaboration is easier if there are shared techniques and a common language"},
-		{ h : "Proven techniques" , t : "React is used by Facebook and Instagram"},
-		{ h : "Scope" , t : "Managing scope can get very complex: <span>IIFEs, closure, this, bind, module patterns</span>. Frameworks can help with scope."},
+		{ h : "Teams" , t : "We need ways to write code in teams. <span>Collaboration</span> is easier if there are shared techniques and a common language"},
+		{ h : "Proven techniques" , t : "React is used by WhatsApp and Instagram. Angular is used in Google Cloud Platform and AdWords."},
+		{ h : "Scope" , t : "Scope in Javascript is complex: <span>IIFEs, closure, this, bind, module patterns</span>. Javascript frameworks can help."},
+		{ i : "media/monkey.gif" , t : "Understanding Javascript frameworks is a big challenging and evolving topic. It is easy to feel overwhelmed." },
 
 		// Things I need to know ==========================================
 
-		{ theme : "Things I need to know" , i : "media/js.png" },
-		{ h : "Javascript fundamentals" , t : "Variables, Arrays, functions, objects"},
+		{ theme : "Javascript" , i : "media/js.png" },
+		{ h : "The challenge" , t : "Framework code may use <span>JS-ES5</span> and <span>JS-ES6</span> and <span>functional methods (map, filter)</span> and <span>Typescript</span> and <span>framework-specific</span> techniques all combined together."},
+		{ h : "ES5" , t : "Javascript fundamentals: variables, arrays, functions, objects"},
 		{ h : "ES6" , t : "Arrow functions, classes, let, const, destructuring, modules, template-strings."},
-		{ h : "Tools" , t : "Webpack and Babel transpile and bundle code back to a single ES5 file."},
 		{ h : "Functional" , t : "Map(), reduce(), filter(), forEach(), sort()" },
 		{ h : "Pure Functions" , t : "Self-contained predictable code with no side-effects. They do not depend or change anything outside of the function." },
+		{ h : "Tools" , t : "Webpack and Babel transpile and bundle code back to a single ES5 file."},
 
 		// COMPONENTS ===================================
 
 		{ theme : "Components", i : "media/components.png" },
-		{ h : "Components" , t : "Components are a fundamental building block for building applications." },
-		{ h : "Components" , t : "A component combines markup, logic, state, events and parameters to create a custom element." },
-		{ h : "A separation of concerns" , t : "Frameworks challenge conventional wisdom on how we group, or separate HTML, CSS, JS and data." },
-		{ i : "media/react-book.png" , t : "'That kind of separation is an illusion. The truth is that JS and HTML are tightly coupled.'" },
-		{ h : "A separation by components" , t : "Separate the application by components, not by technology." },
-		{ h : "Composition" , t : "Components contain instances of other components. Composition is favoured over inheritance." },
+		{ h : "Components" , t : "Both Angular and React are component based. Components are a fundamental building block for building applications." },
+		{ h : "Components" , t : "A component combines markup, logic, state, and encapsulated styles to create a custom element." },
+		{ h : "Components" , t : "Components are <span>composed</span> of instances of other components. Your application is a hierarchy of components." },
+		{ h : "A separation of concerns?" , t : "Components combine markup (HTML) and logic (JS) in the same file, challenging traditional approaches." },
+		{ h : "State" , t : "Is the state of the application shared across multiple components? Or do you isolate in one place using a state management pattern like <span>Redux</span>" },
 
 		// REACT ANGULAR ===================================
-		{ i : "media/monkey.gif" , t : "No one single framework solves all problems. The choice of framework depends on the specific project." }
 
 	]
 
@@ -59,7 +59,7 @@
 
 		s.empty();
 
-		slide.theme ? $("<h1>" , { html: slide.theme }).appendTo( s ) : null;
+		slide.theme ? $("<h2>" , { html: slide.theme }).appendTo( s ) : null;
 
 		slide.h ? $("<h2>" , { html: slide.h }).appendTo( s ) : null;
 		slide.i ? $("<img>" , { src: slide.i }).appendTo( s ) : null;
