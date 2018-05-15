@@ -1,5 +1,10 @@
 ## Oxford React Angular Frameworks 2018
 
+## Slide ideas
+
+- Observables are just one pattern out of many that you can use with Angular.
+- Promises emit a single value whereas streams emit many values. Streams improve upon the promise pattern in that we can continuously respond to data changes on a stream (vs. a one-time resolve from a promise)
+
 ## To Do
 
 - Create diagram of JS ecosystem/road-map

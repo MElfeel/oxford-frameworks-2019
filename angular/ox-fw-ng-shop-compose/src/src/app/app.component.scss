@@ -13,7 +13,7 @@ $brand-color : orangered;
     font-size: 1rem;
 }
 
-.produce{
+.flex{
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -24,11 +24,11 @@ $brand-color : orangered;
 
 .fruit{
     padding: 1rem;
-    border:1px solid lightgrey;
+    border:2px solid grey;
     margin:0.25rem;
     text-align: center;
     font-size: 1rem;
-    width: 10%;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -37,10 +37,28 @@ $brand-color : orangered;
 }
 
 .outstock{
-    opacity: 0.4;
+    transform: scale(0.75);
     cursor:default;
+    border:2px dashed grey;
+}
+
+.outstock:hover{
+    background-color: white;
 }
 
 .discount{
     color:forestgreen;
+}
+
+.empty{
+	background-color: orangered;
+	padding: 1rem;
+	border-radius: 4px;
+	text-align: center;
+	margin:1rem auto;
+	width: 4rem;
+	letter-spacing: 1px;
+	cursor: pointer;
+	font-size: 0.9rem;
+	color:white;
 }
