@@ -4,6 +4,7 @@
 	var slides = [
 
 		{ h : "A tale of two frameworks" , i : "media/js-angular-react-oxford.jpg" },
+		{ h : "A tale of two frameworks" , i : "John Coumbe, 26 May 2018" },
 		{ h : "Framework?" , t : "Frameworks define structures and scaffolding to help you build a web application." },
 		{ h : "Framework?" , t : "You write code that follows the conventions of the framework to build something in a structured way." },
 		{ h : "Today" , t : "Todays course will use <span>hands-on exercises</span> to introduce the Javascript frameworks Angular and React." },
