@@ -38,8 +38,6 @@
 		
 - Review a more advanced example with services and JSON data.
 
-#### React
-
 #### Angular
 
 - The structure of an Angular app.
@@ -67,11 +65,11 @@
 
 		https://stackblitz.com/edit/ox-fw-ng-game
 				
-- Angular use RxJS: Reactive extensions to Javascript. This programming paradigm uses Observables: objects which manage an async stream of data.
+- Angular use **RxJS**: Reactive extensions to Javascript. This programming paradigm uses Observables: objects which manage an async stream of data.
 
 		https://stackblitz.com/edit/ox-fw-js-observables
 		
-- Using Observables in Angular forms
+- Using **Observables** in Angular forms
 
 		https://stackblitz.com/edit/ox-fw-ng-forms
 		
@@ -84,4 +82,31 @@
 
 		https://stackblitz.com/edit/ox-fw-ng-redux
 
+#### React
+
+- Stateless components with composition using ES5 and ES6 syntax.
+
+		https://stackblitz.com/edit/ox-fw-react-book
+		
+- Shopping basket using components, map, props and state.
+
+		https://stackblitz.com/edit/ox-fw-react-fruit
+
+- The Container-Presentation pattern makes a separation between stateful/logic components and stateless/view components.
+
+		https://stackblitz.com/edit/ox-fw-container-pres
+		
+- React makes extensive use of ES6 modules. Review import/export syntax.
+
+		https://stackblitz.com/edit/ox-fw-react-modules
+		
+- Create four instances of a panel component that manages its own state.
+- Review runtime scope problems with **this** and **bind**.
+
+		https://stackblitz.com/edit/ox-fw-react-state
+		
+- Using the Redux state management pattern in React
+
+		https://stackblitz.com/edit/ox-fw-react-redux
+		
 ##### john.coumbe@gmail.com
