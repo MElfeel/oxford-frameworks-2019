@@ -47,14 +47,23 @@
 - Angular apps are a **composition** of components.
 - Data is passed down to components using **Inputs**.
 - Events are fired from components as **Outputs**.
+- Exercises:
 
 		Create a new Angular project in StackBlitz
+		
+- Create a shopping basket application
 
-- Complete a phrase book using composition
+		https://stackblitz.com/edit/ox-fw-ng-shop-starter
+		
+- Review a more complex implementation of the shop application
+
+		https://stackblitz.com/edit/ox-fw-ng-shop-complete
+
+- Complete a **phrase book** using composition
 
 		https://stackblitz.com/edit/ox-fw-ng-translate
 	
-- Complete a game using events
+- Complete a **game** using events
 
 		https://stackblitz.com/edit/ox-fw-ng-game
 				
@@ -65,5 +74,14 @@
 - Using Observables in Angular forms
 
 		https://stackblitz.com/edit/ox-fw-ng-forms
+		
+- The **Redux** state management pattern in Angular.
+- This aims to **isolate** application state in one place.
+- State is held in a **store**.
+- Application code fires off **actions**.
+- Some custom code that you write called a **reducer** makes decisions based on these actions about how to update the store.
+- When the store changes, **subscribers** are notified. 
+
+		https://stackblitz.com/edit/ox-fw-ng-redux
 
 ##### john.coumbe@gmail.com
