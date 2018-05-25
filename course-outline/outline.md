@@ -50,8 +50,20 @@
 
 		Create a new Angular project in StackBlitz
 
+- Complete a phrase book using composition
+
+		https://stackblitz.com/edit/ox-fw-ng-translate
+	
+- Complete a game using events
+
+		https://stackblitz.com/edit/ox-fw-ng-game
+				
 - Angular use RxJS: Reactive extensions to Javascript. This programming paradigm uses Observables: objects which manage an async stream of data.
 
 		https://stackblitz.com/edit/ox-fw-js-observables
+		
+- Using Observables in Angular forms
+
+		https://stackblitz.com/edit/ox-fw-ng-forms
 
 ##### john.coumbe@gmail.com
