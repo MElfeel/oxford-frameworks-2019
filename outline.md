@@ -19,7 +19,7 @@
 - Arrow, let/const, destructuring, templates strings, classes, modules
 - Functional programming : Map, filter, reduce, forEach, pure functions
 
-		https://stackblitz.com/edit/ox-fw-js-review
+	[https://stackblitz.com/edit/ox-fw-js-review](https://stackblitz.com/edit/ox-fw-react-book)
 
 - Template literals in ES6 and their relevance to frameworks.
 
