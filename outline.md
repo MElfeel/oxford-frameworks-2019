@@ -21,7 +21,7 @@
 
 ###### Exercise
 
-[https://stackblitz.com/edit/ox-fw-js-review](https://stackblitz.com/edit/ox-fw-react-book)
+[https://stackblitz.com/edit/ox-fw-js-review](https://stackblitz.com/edit/ox-fw-js-review)
 
 - Template literals in ES6 and their relevance to frameworks.
 
@@ -115,12 +115,12 @@
 		
 - Shopping basket using components, map, props and state.
 
-[https://stackblitz.com/edit/ox-fw-react-fruit](https://stackblitz.com/edit/ox-fw-react-book)
+[https://stackblitz.com/edit/ox-fw-react-fruit](https://stackblitz.com/edit/ox-fw-react-fruit)
 
 ###### Exercise
 - The Container-Presentation pattern makes a separation between stateful/logic components and stateless/view components.
 
-[https://stackblitz.com/edit/ox-fw-container-pres](https://stackblitz.com/edit/ox-fw-react-book)
+[https://stackblitz.com/edit/ox-fw-container-pres](https://stackblitz.com/edit/ox-fw-container-pres)
 
 ###### Exercise		
 - React makes extensive use of ES6 modules. Review import/export syntax.
