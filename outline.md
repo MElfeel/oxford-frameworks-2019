@@ -1,8 +1,8 @@
-## A Tale Of Two Frameworks
+# A Tale Of Two Frameworks
 
 ## John Coumbe, Oxford, May 26 2018
 
-#### Introduction
+## Introduction
 
 - Nominal roll, register students
 - Introductions, course format, coffee, WIFI.
@@ -10,7 +10,7 @@
 - JS ecosystem: ES5, ES6, Node, jQuery, Angular, React, functional programming.
 - Setup: Github account, StackBlitz
 
-#### Javascript review
+## Javascript review
 
 - Objects, arrays, functions, variables
 - Copy by reference/by value
@@ -29,7 +29,7 @@
 
 [https://stackblitz.com/edit/ox-fw-es6-tmpl](https://stackblitz.com/edit/ox-fw-es6-tmpl)
 
-#### Typescript
+## Typescript
 
 - Adding strict types to Javascript
 - A compile-time, not a run-time technology.
@@ -40,13 +40,7 @@
 		
 - Example composition
 
-###### Exercise
-
-[https://stackblitz.com/edit/ox-fw-ng-shop-starter](https://stackblitz.com/edit/ox-fw-ng-shop-starter)
-		
-- Review a more advanced example with services and JSON data.
-
-#### Angular
+## Angular
 
 - The structure of an Angular app.
 - **Components** combine logic, state, markup, style and a custom HTML element.
@@ -63,7 +57,7 @@
 
 [https://stackblitz.com/edit/ox-fw-ng-shop-starter](https://stackblitz.com/edit/ox-fw-ng-shop-starter)
 		
-- Review a more complex implementation of the shop application
+- Review a more advanced example with services and JSON data.
 
 ###### Exercise
 
@@ -103,7 +97,7 @@
 
 [https://stackblitz.com/edit/ox-fw-ng-redux](https://stackblitz.com/edit/ox-fw-ng-redux)
 
-#### React
+## React
 
 - Stateless components with composition using ES5 and ES6 syntax.
 
@@ -139,4 +133,4 @@
 
 [https://stackblitz.com/edit/ox-fw-react-redux](https://stackblitz.com/edit/ox-fw-react-redux)
 		
-##### john.coumbe@gmail.com
+#### john.coumbe@gmail.com
