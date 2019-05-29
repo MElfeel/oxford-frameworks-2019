@@ -11,49 +11,57 @@ class BookShop extends Component {
     super();
 
     this.state = {
-      books: []
+      books: [],
+      basket: []
     };
   }
 
   componentDidMount() {
 
-    		fetch( this.props.path )
-          .then( response => response.json())
-          .then( books => this.setState( { books:books }))
+    fetch(this.props.path)
+      .then(response => response.json())
+      .then(books => this.setState({ books: books }))
 
   }
 
-  remove = id => {
-    let copy = [ ...this.state.books ];
-    copy = copy.filter( book => book.id !== id );
-    this.setState( { books:copy })
+  select = b => {
+    let _books = [...this.state.books];
+    _books = _books.filter(book => book.id !== b.id);
+    this.setState({ books: _books })
+
+    let _basket = [...this.state.basket, {...b} ]
+    this.setState({ basket: _basket })
   }
 
   render() {
 
     return (
-       <section className="library">
-
-        { this.state.books.map( (b,n) => <Book key={b.id} remove={this.remove} book={b}/> ) }
-
+      <section>
+        <section className="library">
+          {this.state.books.map((b, n) => <Book key={b.id} select={this.select} book={b} />)}
         </section>
+        <hr/>
+        <section className="library basket">
+          {this.state.basket.map((b, n) => <Book key={b.id} book={b} select={ () => null }/>)}
+        </section>
+      </section>
     );
   }
 }
 
 // ==============================================================
 
-const Book = ({ book,remove }) => 
+const Book = ({ book, select }) =>
 
-  <section className="book" onClick={ () => remove( book.id )} >
-    <h4>{ book.author }</h4>
-    <p>{ book.title }</p>
+  <section className="book" onClick={() => select(book)} >
+    <h4>{book.author}</h4>
+    <p>{book.title}</p>
   </section>
 
 // ==============================================================
 
 
 let el = document.getElementById('root');
-render(<BookShop path="https://my-json-server.typicode.com/johncoumbe/oxfordjson/books"/>, el );
+render(<BookShop path="https://my-json-server.typicode.com/johncoumbe/oxfordjson/books" />, el);
 
 // ==============================================================

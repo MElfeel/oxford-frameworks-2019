@@ -1,4 +1,3 @@
-
 body{
 	font-family: lato;
 	font-size: 1rem;
@@ -12,15 +11,33 @@ body{
 }
 
 .book{
-	padding:1rem;
+	padding:0.5rem;
 	margin:0.2rem;
-	border:1px solid lightgrey;
+	border:2px solid lightgrey;
 	text-align: center;
 	width:10rem;
 	height:8rem;
 	letter-spacing: 1px;
+  cursor:pointer;
 }
 
 .book h4{
 	color:orangered;
+}
+
+.book:hover{
+  background-color: ghostwhite;
+}
+
+.selected{
+  transform:scale(0.8);
+  cursor:default;
+}
+
+.selected:hover{
+  background-color: white;
+}
+
+.basket .book h4{
+  color:forestgreen;
 }
