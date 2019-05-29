@@ -1,0 +1,14 @@
+<section class="books">
+
+	<section class="library">
+
+		<section [ngClass]="{ selected:book.selected }" class="book" *ngFor="let book of books" (click)="select(book)">
+
+			<h4>{{ book.author }}</h4>
+			<p>{{ book.title }}</p>
+      
+		</section>
+
+	</section>
+
+</section>

@@ -1,0 +1,38 @@
+body{
+	font-family: lato,sans-serif;
+	font-size: 1rem;
+}
+
+.shop{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.counter{
+	margin:0.5rem;
+	width:8.5rem;
+	border:1px solid darkslategrey;
+	padding:0.5rem;
+	text-align: center;
+  background-color: beige;
+}
+
+.counter h2{
+	color:brown;
+}
+
+.counter h4{
+	font-size: 1rem;
+}
+
+.counter p{
+	padding:0.5rem;
+	background-color: sienna;
+	color:white;
+	cursor: pointer;
+	margin:0.25rem;
+	display: inline-block;
+	border-radius: 2px;
+}

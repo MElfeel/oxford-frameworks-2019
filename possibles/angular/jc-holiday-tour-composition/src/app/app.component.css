@@ -1,0 +1,28 @@
+.holiday{
+    font-family: Lato;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.city{
+  padding:0.2rem;
+  border:1px solid lightgrey;
+  margin:0.2rem;
+  text-align: center;
+  width:6rem;
+  cursor: pointer;
+}
+
+.city p{
+  color:orangered;
+}
+
+.selected{
+  opacity:0.2;
+  cursor:default;
+}

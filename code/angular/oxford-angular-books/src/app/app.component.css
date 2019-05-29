@@ -1,0 +1,35 @@
+.books{
+	font-family: lato;
+	font-size: 1rem;
+}
+
+.library{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.book{
+	padding:1rem;
+	margin:0.2rem;
+	border:2px solid lightgrey;
+	text-align: center;
+	width:10rem;
+	height:8rem;
+	letter-spacing: 1px;
+  cursor:pointer;
+}
+
+.book h4{
+	color:orangered;
+}
+
+.book:hover{
+  background-color: ghostwhite;
+}
+
+.selected{
+  transform:scale(0.8);
+  border:2px dashed lightgrey;
+}
