@@ -11,7 +11,7 @@
 }
 
 .book{
-	padding:1rem;
+	padding:0.5rem;
 	margin:0.2rem;
 	border:2px solid lightgrey;
 	text-align: center;
@@ -31,5 +31,13 @@
 
 .selected{
   transform:scale(0.8);
-  border:2px dashed lightgrey;
+  cursor:default;
+}
+
+.selected:hover{
+  background-color: white;
+}
+
+.basket .book h4{
+  color:forestgreen;
 }

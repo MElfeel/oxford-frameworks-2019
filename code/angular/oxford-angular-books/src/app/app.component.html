@@ -2,7 +2,8 @@
 
 	<section class="library">
 
-		<section [ngClass]="{ selected:book.selected }" class="book" *ngFor="let book of books" (click)="select(book)">
+		<section [ngClass]="{ selected:book.selected }" class="book" 
+    *ngFor="let book of books" (click)="book.selected ? null : select(book)">
 
 			<h4>{{ book.author }}</h4>
 			<p>{{ book.title }}</p>
@@ -10,5 +11,18 @@
 		</section>
 
 	</section>
+
+  <hr/>
+
+ 	<section class="library basket">
+
+		<section class="book" *ngFor="let book of basket" (click)="removeFromBasket(book)">
+
+			<h4>{{ book.author }}</h4>
+			<p>{{ book.title }}</p>
+      
+		</section>
+
+	</section> 
 
 </section>

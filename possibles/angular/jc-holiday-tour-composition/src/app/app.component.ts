@@ -11,6 +11,7 @@ import { City } from './type.city';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class HolidayComponent implements OnInit {
 
   tour = [];

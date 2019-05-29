@@ -13,6 +13,7 @@ export class AppComponent  {
     path = "https://my-json-server.typicode.com/johncoumbe/oxfordjson/books";
 
     books : Book[] = [];
+    basket : Book[] = [];
 
     constructor( private ds:DataService ) {}
 
@@ -24,7 +25,19 @@ export class AppComponent  {
       // Remove book
       // this.books = this.books.filter( book => book.id !== b.id );
 
-      // Toggle boolean property used by ngClass to style book.
-      b.selected = !b.selected;
+      b.selected = true;
+
+      // Push a copy of book into basket.
+      this.basket.push( {...b});
+      
+    }
+
+    removeFromBasket( b ) {
+
+      // Remove book from basket.
+      this.basket = this.basket.filter( book => book.id !== b.id );
+
+      // Add the book back onto the shelf
+      this.books = this.books.map( book => (book.id === b.id) ? {...b, selected:false } : book );
     }
 }
