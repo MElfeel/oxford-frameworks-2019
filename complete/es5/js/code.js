@@ -10,14 +10,10 @@ var books = [
   ]
 
 function draw( book ) {
-
-	var markup = 
-	'<section class="book">' +
-		'<h4>' + book.author + '</h4>' +
-		'<p>' + book.title + '</p>' +
-	'</section>' ;
-
-	document.querySelector(".library").innerHTML += markup;
+	var html = '<section class="book">' + '<h4>' + book.author + '</h4>' + '<p>' + book.title + '</p>' + '</section>' ;
+	document.querySelector(".library").innerHTML += html;
 }
 
-books.forEach( draw )
+for ( var j=0; j < books.length; j++ ) {
+	draw( books[j] );
+}
