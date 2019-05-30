@@ -1,8 +1,0 @@
-{
-  "name": "ox-fw-js-observables",
-  "version": "0.0.0",
-  "private": true,
-  "dependencies": {
-    "rx": "4.1.0"
-  }
-}
