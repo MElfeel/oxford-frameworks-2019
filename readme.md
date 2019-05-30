@@ -1,2 +1,6 @@
-# oxford-angular-react-2019-jc
-Oxford Angular React One-Day public course
+## Angular and React : University Of Oxford Department For Continuing Education 
+
+## Course created and taught by John Coumbe, 1st June 2019
+
+
+ 
