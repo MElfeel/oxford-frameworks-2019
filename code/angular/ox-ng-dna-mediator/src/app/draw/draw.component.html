@@ -1,0 +1,5 @@
+<!-- 
+Iterate over the dnaSequence array creating markup like this
+<span class="square adenine">A</span>
+ -->
+<span class="square" [ngClass]="base.name" *ngFor="let base of dnaSequence">{{ base.code }}</span>
