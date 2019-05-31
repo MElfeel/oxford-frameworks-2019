@@ -1,0 +1,9 @@
+body {
+  font-family: Lato;
+  font-size:1.5rem;
+}
+
+p{
+  padding:0.5rem 0;
+  border-bottom: 1px solid lightgrey;
+}
